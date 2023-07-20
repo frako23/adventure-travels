@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Orbitron:wght@500&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --agua: #35AD94;
+  --sol: #F6AE4A;
+  --plata: #81807d;
+  --oscuro: #222222;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 85%;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 10px;
+  background-color: var(--agua) ;
+  color: #fff ;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.primary-btn:hover {
+  background-color: var(--sol);
+  color: #fff;
+}
+
+/* comienzan los estilos del navbar */
+.navbar {
+  background-color: var(--oscuro);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 10vh;
+  line-height: 10vh;
+}
+
+nav ul li {
+  display: inline-block;
+  transition: all 0.5s ease-in;
+  margin: 0 30px 0 0;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 100;
+  font-size: 15px;
+  letter-spacing: 2px;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.8;
+  padding-inline: 1rem;
+}
+
+nav ul li a:hover {
+  color: var(--agua);
+  font-weight: bold;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+nav i {
+  color:#fff;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar{
+    text-align:center;
+  }
+
+  nav ul {
+    display: block;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  nav ul li {
+    display: grid;
+  }
+
+  .active {
+    background-color: #35AD94;
+    left: 0;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 100;
+  }
+
+  nav ul li a {
+    font-weight: 400;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .fa-times{
+    font-size: 2rem;
+  }
+}
+  
