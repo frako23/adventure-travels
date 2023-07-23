@@ -40,6 +40,27 @@ export const Slide = ({slides}) => {
             </div>
         )})}
         </section>
+
+        <section className="slide-form">
+          <div className="container">
+            <h2>Disfruta tus vacaciones</h2>
+            <span>Busca y reserva tu hotel</span>
+
+            <form action="">
+              <input type="text"  placeholder="Buscar Ciudad" name="" id=""/>
+              <div className="flex-space">
+                <input type="date" placeholder="Check In"/>
+                <input type="date" placeholder="Check Out"/>
+              </div>
+              <div className="flex-space">
+                <input type="number" placeholder="Adulto(s)(+18)"/>
+                <input type="number" placeholder="Check Niños(0 - 17)"/>
+              </div>
+              <input type="number" placeholder="Habitaciones"/>
+              <input type="submit" placeholder="Buscar" className="submit"/>
+            </form>
+          </div>
+        </section>
     </>
   )
 }
