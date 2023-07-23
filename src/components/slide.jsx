@@ -37,7 +37,7 @@ export const Slide = ({slides}) => {
             className={index === current? "slide active" : "slide"} key={index}
             >
              
-              {index === current && <img  className="contain" src={slide.imagen} alt="Home Image"/>}
+              {index === current && <img src={slide.imagen} alt="Home Image"/>}
             </div>
         )})}
     </>
