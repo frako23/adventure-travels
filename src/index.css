@@ -73,7 +73,7 @@ button {
 
 .logo img {
   border-radius: 50%;
-  height: 4.5rem;
+  height: 3rem;
 }
 
 .navbar-logo-section {
@@ -318,7 +318,7 @@ header .text {
   left: 10%;
   background-color: rgba(0, 0, 0, 0.7);
   width: 35%;
-  height: 70vh;
+  height: 29rem;
   border-radius: 5px;
   color: #fff;
 }
