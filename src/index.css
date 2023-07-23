@@ -20,6 +20,7 @@ a {
 
 body{
   font-family: 'Poppins', sans-serif;
+  
 }
 
 .flex {
@@ -28,7 +29,7 @@ body{
 
 .flex-space {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .container {
@@ -70,6 +71,17 @@ button {
   line-height: 10vh;
 }
 
+.logo img {
+  border-radius: 50%;
+  height: 7rem;
+}
+
+.navbar-logo-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 nav ul li {
   display: inline-block;
   transition: all 0.5s ease-in;
@@ -103,11 +115,39 @@ nav i {
   color:#fff;
 }
 
+/* header */
+/* header {
+  padding: 40px 0 20px 0;
+  background-color: #fff;
+} */
+header .box {
+  margin: 0 0 0 30px;
+}
+
+header a {
+  font-size: 13px;
+  color: var(--plata);
+}
+
+header i {
+  font-size: 40px;
+  color: #35AD94;
+  margin-right: 15px;
+}
+
+header .text {
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
   .navbar{
     text-align:center;
   }
 
+
+  .logo img {
+    height: 4rem;
+  }
   nav ul {
     display: block;
     width: 100%;
@@ -147,5 +187,79 @@ nav i {
   .fa-times{
     font-size: 2rem;
   }
-}
+
+  /* header */
+  header .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   
+  header .contact {
+    justify-content: center;
+    align-items: center;
+  }
+
+  header a {
+    font-size: 13px;
+  }
+
+  header i {
+    font-size: 30px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+
+}
+
+
+/* @media screen and (max-width: 464px) {
+  .navbar {
+
+  }
+} */
+
+/* HOME */
+.slider {
+  overflow: hidden;
+  position: relative;
+  /* height: 200vh; */
+}
+
+.slide img {
+  /* width: 100%;
+  height: auto; */
+  /* padding-inline: 20rem; */
+  width: 50%;
+  height: 20rem;
+  padding-inline: 20rem;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.control-btn .next {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  right: 5%;
+}
+
+.control-btn .prev{
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  left: 5%;
+}
+
+.slide {
+  /* opacity: 0; */
+  transition-duration: 1s ease;
+}
+
+.slide .active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
