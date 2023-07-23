@@ -23,23 +23,23 @@ export const Slide = ({slides}) => {
         <section className='slider'>
             <div className='control-btn'>
               <button className="prev" onClick={prevSlide}>
-                <i className="fas fa-caret-right"></i>
-              </button>
-              <button className="next" onClick={nextSlide}>
                 <i className="fas fa-caret-left"></i>
               </button>
+              <button className="next" onClick={nextSlide}>
+                <i className="fas fa-caret-right"></i>
+              </button>
             </div>
-        </section>
 
         {data.map((slide, index) => {
           return(
             <div 
-            className={index === current? "slide active" : "slide"} key={index}
+            className={index === current? "slide activer" : "slide"} key={index}
             >
              
               {index === current && <img src={slide.imagen} alt="Home Image"/>}
             </div>
         )})}
+        </section>
     </>
   )
 }
