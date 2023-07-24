@@ -15,7 +15,7 @@ export const Footer = () => {
             <i className='fa-brands fa-twitter'></i>
             <i className='fa-brands fa-linkedin'></i>
             <a  href="https://www.instagram.com/adventuretravelsve/"><i className='fa-brands fa-instagram'></i></a>
-            <a  href="wa.me/584241558007"><i className='fa-brands fa-whatsapp'></i></a>
+            <a  href="https://wa.me/584241558007"><i className='fa-brands fa-whatsapp'></i></a>
             <i className='fa-brands fa-youtube'></i>
           </div>
         </div>
