@@ -229,7 +229,7 @@ header .text {
   left: 5%;
   top: 12%;
   width: 90%;
-  height: 70vh;
+  height: 32rem;
 }
 }
 
@@ -401,7 +401,7 @@ input {
 .aboutCard .image::before {
   content: "";
   position: absolute;
-  bottom: 30%;
+  bottom: 33%;
   left: 10%;
   background-color: rgba(0, 0, 0, 0.7);
   width: 70%;
@@ -411,14 +411,14 @@ input {
 }
 
 .image img{
-  width: 33rem;
-  height: 19rem;
+  width: 29rem;
+  height: 17rem;
   object-fit: cover;
 }
 .aboutCard .control-btn::before {
   content: "";
   position: absolute;
-  bottom: 28%;
+  bottom: 31%;
   left: 15%;
   background-color: rgba(0, 0, 0, 0.5);
   width: 60%;
@@ -462,6 +462,10 @@ input {
   }
   .aboutCard img {
     width: 100%;
+  }
+
+  .aboutCard{
+    padding-inline: 0;
   }
 }
 
@@ -567,6 +571,22 @@ footer .primary-btn {
 
 @media screen and (max-width: 768px) {
   footer .grid {
+    grid: unset;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+  .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .main-content {
+    width: 100%;
+  }
+  .side-content {
+    width: 100%;
+    margin-left: 0px;
   }
 }

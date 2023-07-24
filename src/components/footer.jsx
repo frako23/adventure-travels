@@ -11,11 +11,11 @@ export const Footer = () => {
           <br />
           <p>Lorem ipsum dolor sit amet sectetur adipiscing elit amet consectetur scing elit amet.</p>
           <div className='icon flex_space'>
-            <i className='fa-brands fa-facebook'></i>
+          <a  href="https://www.facebook.com/adventuretravelslatam"><i className='fa-brands fa-facebook'></i></a>
             <i className='fa-brands fa-twitter'></i>
             <i className='fa-brands fa-linkedin'></i>
-            <i className='fa-brands fa-instagram'></i>
-            <i className='fa-brands fa-pinterest'></i>
+            <a  href="https://www.instagram.com/adventuretravelsve/"><i className='fa-brands fa-instagram'></i></a>
+            <a  href="wa.me/584241558007"><i className='fa-brands fa-whatsapp'></i></a>
             <i className='fa-brands fa-youtube'></i>
           </div>
         </div>
@@ -78,7 +78,7 @@ export const Footer = () => {
       </div>
     </footer>
     <div className='legal'>
-      <p>© 2022 All Rights Reserved.</p>
+      <p>Creado por Devix © 2023 Todos los derechos reservados.</p>
     </div>
   </>
   )
