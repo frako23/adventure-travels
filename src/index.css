@@ -146,7 +146,7 @@ header .text {
 
 
   .logo img {
-    height: 6rem;
+    height: 4.5rem;
   }
   nav ul {
     display: block;
@@ -574,6 +574,13 @@ footer .primary-btn {
 @media screen and (max-width: 768px) {
   footer .grid {
     grid: unset;
+  }
+  .box {
+    width: 20rem;
+  }
+  .navigation{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
